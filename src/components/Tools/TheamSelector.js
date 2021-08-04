@@ -8,15 +8,15 @@ class TheamSelector extends Component {
             let index=$(this).attr('id');
             if(index=='btn1'){
                 r.style.setProperty('--hue-color', 230); // blue
-            }else if(index=='btn2'){
+            }else if(index==='btn2'){
                 r.style.setProperty('--hue-color', 1); // red
-            }else if(index=='btn3'){
+            }else if(index==='btn3'){
                 r.style.setProperty('--hue-color', 40); // orange
-            }else if(index=='btn4'){
+            }else if(index==='btn4'){
                 r.style.setProperty('--hue-color', 275); // purple
-            }else if(index=='btn5'){
+            }else if(index==='btn5'){
                 r.style.setProperty('--hue-color', 300); // pink
-            }else if(index=='btn6'){
+            }else if(index==='btn6'){
                 r.style.setProperty('--hue-color', 120); // green
             }
             

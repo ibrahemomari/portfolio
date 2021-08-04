@@ -32,7 +32,11 @@ class Header extends Component {
                     <i class="uil uil-briefcase-alt nav__icon"></i> Services
                   </a>
                 </li>
-
+                <li class="nav__item">
+                  <a href="#projects" class="nav__link">
+                    <i class="uil uil-briefcase-alt nav__icon"></i> Projects
+                  </a>
+                </li>
                 <li class="nav__item">
                   <a href="#contact" class="nav__link">
                     <i class="uil uil-message nav__icon"></i>Contact Me
