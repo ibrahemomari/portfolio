@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 class ContactMe extends Component {
   render() {
     return (
@@ -21,7 +20,7 @@ class ContactMe extends Component {
                 <i class="uil uil-envelope contact__icon"></i>
                 <div>
                   <h3 class="contact__title">Email</h3>
-                  <span class="contact__subtitle">ibrahem.omari@gmail.com</span>
+                  <span class="contact__subtitle">ibrahem.omari96@gmail.com</span>
                 </div>
               </div>
 

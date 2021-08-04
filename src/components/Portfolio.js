@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Home from "./Home";
 import About from "./About";
+import { Flip } from "react-reveal/";
 import Skills from "./Skills";
 import Qualification from "./Qualification";
 import "../style/styles.css";
@@ -9,6 +10,8 @@ import ProjectInMind from "./ProjectInMind";
 import ContactMe from "./ContactMe";
 import Intro from "./Intro";
 import TheamSelector from "./Tools/TheamSelector";
+import Projects from "./Projects";
+
 class Portfolio extends Component {
   componentDidMount() {
     /*==================== MENU SHOW Y HIDDEN ====================*/
@@ -214,13 +217,15 @@ class Portfolio extends Component {
           </svg>
         </div>
         {/* <!--==================== Intro ====================--> */}
-          <Intro />
+        <Intro />
         {/* <!--==================== Theam Selector ====================--> */}
-          <TheamSelector/>
+        <TheamSelector />
         {/* <!--==================== MAIN ====================--> */}
         <main class="main">
           {/* <!--==================== HOME ====================--> */}
+
           <Home />
+
           {/* <!--==================== ABOUT ====================--> */}
           <About />
           {/* <!--==================== SKILLS ====================--> */}
@@ -232,6 +237,8 @@ class Portfolio extends Component {
           {/* <!--==================== SERVICES ====================--> */}
           <Service />
 
+          {/* <!--==================== PROJECTS ====================--> */}
+          <Projects />
           {/* <!--==================== PROJECT IN MIND ====================--> */}
           <ProjectInMind />
 
