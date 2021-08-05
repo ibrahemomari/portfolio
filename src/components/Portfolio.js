@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Home from "./Home";
 import About from "./About";
-import { Flip } from "react-reveal/";
 import Skills from "./Skills";
 import Qualification from "./Qualification";
 import "../style/styles.css";
@@ -11,6 +10,7 @@ import ContactMe from "./ContactMe";
 import Intro from "./Intro";
 import TheamSelector from "./Tools/TheamSelector";
 import Projects from "./Projects";
+import { Zoom } from "react-reveal";
 
 class Portfolio extends Component {
   componentDidMount() {
@@ -129,9 +129,15 @@ class Portfolio extends Component {
     /*==================== CHANGE BACKGROUND HEADER ====================*/
     function scrollHeader() {
       const nav = document.getElementById("header");
+      const expandDiv = document.getElementById("expand");
       // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-      if (this.scrollY >= 80) nav.classList.add("scroll-header");
-      else nav.classList.remove("scroll-header");
+      if (this.scrollY >= 80) {
+        nav.classList.add("scroll-header");
+        expandDiv.style.display="block";
+      } else {
+        nav.classList.remove("scroll-header");
+        expandDiv.style.display="none";
+      }
     }
     window.addEventListener("scroll", scrollHeader);
     /*==================== SHOW SCROLL UP ====================*/
@@ -178,6 +184,24 @@ class Portfolio extends Component {
       localStorage.setItem("selected-theme", getCurrentTheme());
       localStorage.setItem("selected-icon", getCurrentIcon());
     });
+
+    // on scroll change
+    const expandDiv = document.getElementById("expand");
+    const speed = 14;
+
+    function expanding() {
+      const scrolltop = window.pageYOffset;
+      const scrollAndSpeed = scrolltop / speed;
+      expandDiv.style.height = (Math.min(Math.max(scrollAndSpeed, 5), 350)) + "rem";
+    }
+
+    window.addEventListener(
+      "scroll",
+      function () {
+        requestAnimationFrame(expanding); 
+      },
+      false
+    );
   }
   render() {
     return (
@@ -216,6 +240,7 @@ class Portfolio extends Component {
             </g>
           </svg>
         </div>
+        <div id="expand"></div>
         {/* <!--==================== Intro ====================--> */}
         <Intro />
         {/* <!--==================== Theam Selector ====================--> */}
@@ -223,27 +248,35 @@ class Portfolio extends Component {
         {/* <!--==================== MAIN ====================--> */}
         <main class="main">
           {/* <!--==================== HOME ====================--> */}
-
-          <Home />
-
+          <Zoom>
+            <Home />
+          </Zoom>
           {/* <!--==================== ABOUT ====================--> */}
-          <About />
+          <Zoom>
+            <About />
+          </Zoom>
           {/* <!--==================== SKILLS ====================--> */}
-          <Skills />
-
+          <Zoom>
+            <Skills />
+          </Zoom>
           {/* <!--==================== QUALIFICATION ====================--> */}
-          <Qualification />
-
+          <Zoom>
+            <Qualification />
+          </Zoom>
           {/* <!--==================== SERVICES ====================--> */}
-          <Service />
-
+          <Zoom>
+            <Service />
+          </Zoom>
           {/* <!--==================== PROJECTS ====================--> */}
           <Projects />
           {/* <!--==================== PROJECT IN MIND ====================--> */}
-          <ProjectInMind />
-
+          <Zoom>
+            <ProjectInMind />
+          </Zoom>
           {/* <!--==================== CONTACT ME ====================--> */}
-          <ContactMe />
+          <Zoom>
+            <ContactMe />
+          </Zoom>
         </main>
 
         {/* <!--==================== svg ====================--> */}
@@ -282,7 +315,7 @@ class Portfolio extends Component {
           </svg>
         </div>
         {/* <!--==================== SCROLL TOP ====================--> */}
-        <a href="#" class="scrollup" id="scroll-up">
+        <a href="#home" class="scrollup" id="scroll-up">
           <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
       </>

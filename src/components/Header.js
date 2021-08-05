@@ -11,34 +11,39 @@ class Header extends Component {
             </a>
 
             <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list grid">
-                <li class="nav__item">
-                  <a href="#home" class="nav__link active-link">
+              <ul class="nav__list grid ">
+                <li class="nav__item " >
+                  <a href="#home" class="nav__link change--color active-link">
                     <i class="uil uil-estate nav__icon"></i> Home
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a href="#about" class="nav__link">
+                  <a href="#about" class="nav__link change--color">
                     <i class="uil uil-user nav__icon"></i> About
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a href="#skills" class="nav__link">
+                  <a href="#skills" class="nav__link change--color">
                     <i class="uil uil-file-alt nav__icon"></i>Skills
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a href="#services" class="nav__link">
+                  <a href="#qualification" class="nav__link change--color">
+                    <i class="uil uil-briefcase-alt nav__icon"></i> Qualification
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#services" class="nav__link change--color">
                     <i class="uil uil-briefcase-alt nav__icon"></i> Services
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a href="#projects" class="nav__link">
+                  <a href="#projects" class="nav__link change--color">
                     <i class="uil uil-briefcase-alt nav__icon"></i> Projects
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a href="#contact" class="nav__link">
+                  <a href="#contact" class="nav__link change--color">
                     <i class="uil uil-message nav__icon"></i>Contact Me
                   </a>
                 </li>
