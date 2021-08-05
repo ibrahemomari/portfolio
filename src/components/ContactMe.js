@@ -7,7 +7,7 @@ class ContactMe extends Component {
           <h2 class="section_title">Contact Me</h2>
           <span class="section_subtitle">Git in touch</span>
           <div class="contact__container container grid">
-            <div>
+            <div className="contact__leftSide">
               <div class="contact__information">
                 <i class="uil uil-phone contact__icon"></i>
                 <div>
@@ -58,10 +58,10 @@ class ContactMe extends Component {
                 ></textarea>
               </div>
               <div>
-                <a href="#" class="button button--flex">
+                <button  class="button button--flex">
                   Send Message
                   <i class="uil uil-message button__icon"></i>
-                </a>
+                </button>
               </div>
             </form>
           </div>

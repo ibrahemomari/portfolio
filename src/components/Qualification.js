@@ -4,7 +4,7 @@ class Qualification extends Component {
   render() {
     return (
       <>
-        <section class="qualification section">
+        <section class="qualification section" id="qualification">
           <h2 class="section_title">Qualification</h2>
           <span class="section_subtitle">My personal journey</span>
           <div class="qualification__container container">

@@ -35,6 +35,7 @@ class Footer extends Component {
                 <a
                   href="https://web.facebook.com/ibrahem.alomari.96"
                   target="_blank"
+                  rel="noreferrer" 
                   class="footer__social"
                 >
                   <i class="uil uil-facebook-f"></i>
@@ -43,6 +44,7 @@ class Footer extends Component {
                 <a
                   href="https://www.instagram.com/ibrahem0_0omari/"
                   target="_blank"
+                  rel="noreferrer" 
                   class="footer__social"
                 >
                   <i class="uil uil-instagram"></i>
@@ -51,6 +53,7 @@ class Footer extends Component {
                 <a
                   href="https://twitter.com/Ibrahem0_0omari"
                   target="_blank"
+                  rel="noreferrer" 
                   class="footer__social"
                 >
                   <i class="uil uil-twitter-alt"></i>

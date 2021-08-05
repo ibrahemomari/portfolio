@@ -89,14 +89,16 @@ class Home extends Component {
 
               <div class="home__data">
                 <h1 class="home__title">Hi,I'am Ibrahem</h1>
+                <span className="home__typed-static">A</span> 
                 <Typed
                   strings={[
-                    "A FULL-STACK WEB DEVELOPER",
-                    "A UI/UX DESIGNER",
-                    "A DESIGNER",
+                    " FULL-STACK WEB DEVELOPER",
+                    " UI/UX DESIGNER",
+                    " DESIGNER",
                   ]}
                   loop={true}
                   typeSpeed={90}
+                  className="home__typed-dynamic"
                 />
                 <h3 class="home__subtitle">
                   Skilled web developer, <br />

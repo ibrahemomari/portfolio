@@ -6,7 +6,7 @@ class TheamSelector extends Component {
         $(".circle-btns").click(function() {
             let r = document.querySelector(':root');
             let index=$(this).attr('id');
-            if(index=='btn1'){
+            if(index==='btn1'){
                 r.style.setProperty('--hue-color', 230); // blue
             }else if(index==='btn2'){
                 r.style.setProperty('--hue-color', 1); // red
@@ -28,18 +28,14 @@ class TheamSelector extends Component {
     return (
       <>
         <br />
-        <nav class="social">
-          <ul>
-            <li>
+        <div class="social">
               <Button className="circle-btns btn1" id="btn1"></Button>
               <Button className="circle-btns btn2" id="btn2"></Button>
               <Button className="circle-btns btn3" id="btn3"></Button>
               <Button className="circle-btns btn4" id="btn4"></Button>
               <Button className="circle-btns btn5" id="btn5"></Button>
               <Button className="circle-btns btn6" id="btn6"></Button>
-            </li>
-          </ul>
-        </nav>
+        </div>
       </>
     );
   }
