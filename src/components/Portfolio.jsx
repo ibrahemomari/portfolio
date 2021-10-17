@@ -11,6 +11,8 @@ import Intro from "./Intro";
 import TheamSelector from "./Tools/TheamSelector";
 import Projects from "./Projects";
 import { Zoom } from "react-reveal";
+import { Parallax } from "react-scroll-parallax";
+import { Container, Row } from "react-bootstrap";
 
 class Portfolio extends Component {
   componentDidMount() {
@@ -133,10 +135,10 @@ class Portfolio extends Component {
       // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
       if (this.scrollY >= 80) {
         nav.classList.add("scroll-header");
-        expandDiv.style.display="block";
+        expandDiv.style.display = "block";
       } else {
         nav.classList.remove("scroll-header");
-        expandDiv.style.display="none";
+        expandDiv.style.display = "none";
       }
     }
     window.addEventListener("scroll", scrollHeader);
@@ -192,13 +194,14 @@ class Portfolio extends Component {
     function expanding() {
       const scrolltop = window.pageYOffset;
       const scrollAndSpeed = scrolltop / speed;
-      expandDiv.style.height = (Math.min(Math.max(scrollAndSpeed, 5), 350)) + "rem";
+      expandDiv.style.height =
+        Math.min(Math.max(scrollAndSpeed, 5), 350) + "rem";
     }
 
     window.addEventListener(
       "scroll",
       function () {
-        requestAnimationFrame(expanding); 
+        requestAnimationFrame(expanding);
       },
       false
     );
@@ -206,6 +209,9 @@ class Portfolio extends Component {
   render() {
     return (
       <>
+        <div className="test"></div>
+        <div id="expand"></div>
+
         <div className="portfilio__svg--anmiation">
           <svg
             id="starry"
@@ -240,42 +246,60 @@ class Portfolio extends Component {
             </g>
           </svg>
         </div>
-        <div id="expand"></div>
+
         {/* <!--==================== Intro ====================--> */}
         <Intro />
         {/* <!--==================== Theam Selector ====================--> */}
         <TheamSelector />
+
         {/* <!--==================== MAIN ====================--> */}
         <main class="main">
           {/* <!--==================== HOME ====================--> */}
           <Zoom>
-            <Home />
+            
+              <Home />
+            
           </Zoom>
+
           {/* <!--==================== ABOUT ====================--> */}
           <Zoom>
-            <About />
+            
+              <About />
+            
           </Zoom>
           {/* <!--==================== SKILLS ====================--> */}
           <Zoom>
-            <Skills />
+            
+              <Skills />
+            
           </Zoom>
           {/* <!--==================== QUALIFICATION ====================--> */}
           <Zoom>
-            <Qualification />
+            
+              <Qualification />
+           
           </Zoom>
           {/* <!--==================== SERVICES ====================--> */}
           <Zoom>
-            <Service />
+            
+              <Service />
+           
           </Zoom>
           {/* <!--==================== PROJECTS ====================--> */}
-          <Projects />
+         
+            <Projects />
+          
           {/* <!--==================== PROJECT IN MIND ====================--> */}
           <Zoom>
-            <ProjectInMind />
+            
+              <ProjectInMind />
+           
           </Zoom>
           {/* <!--==================== CONTACT ME ====================--> */}
           <Zoom>
-            <ContactMe />
+            
+              <ContactMe />
+           
           </Zoom>
         </main>
 

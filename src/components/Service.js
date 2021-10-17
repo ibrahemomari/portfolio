@@ -31,7 +31,7 @@ class Service extends Component {
                   <ul class="services__modal-services grid">
                     <li class="services__modal-service">
                       <i class="uil uil-check-circle services__modal-icon"></i>
-                      <p>Conduct user research.n</p>
+                      <p>Conduct user research.</p>
                     </li>
 
                     <li class="services__modal-service">

@@ -119,30 +119,33 @@ class Skills extends Component {
                     <div class="skills__titles">
                       <h3 class="skills__name">PHP</h3>
                       <span class="skills__number">50%</span>
-                    </div>
+                    </div><Reveal effect="skill__bar--anmiation">
                     <div class="skills__bar">
                       <span class="skills__percentage skills__php"></span>
                     </div>
+                    </Reveal>
                   </div>
 
                   <div class="skills__data">
                     <div class="skills__titles">
                       <h3 class="skills__name">Node Js</h3>
                       <span class="skills__number">70%</span>
-                    </div>
+                    </div><Reveal effect="skill__bar--anmiation">
                     <div class="skills__bar">
                       <span class="skills__percentage skills__node"></span>
                     </div>
+                    </Reveal>
                   </div>
 
                   <div class="skills__data">
                     <div class="skills__titles">
                       <h3 class="skills__name">Python</h3>
                       <span class="skills__number">55%</span>
-                    </div>
+                    </div><Reveal effect="skill__bar--anmiation">
                     <div class="skills__bar">
                       <span class="skills__percentage skills__python"></span>
                     </div>
+                    </Reveal>
                   </div>
                 </div>
               </div>
@@ -164,9 +167,11 @@ class Skills extends Component {
                       <h3 class="skills__name">GitHub</h3>
                       <span class="skills__number">70%</span>
                     </div>
+                    <Reveal effect="skill__bar--anmiation">
                     <div class="skills__bar">
                       <span class="skills__percentage skills__github"></span>
                     </div>
+                    </Reveal>
                   </div>
 
                   <div class="skills__data">
@@ -174,9 +179,11 @@ class Skills extends Component {
                       <h3 class="skills__name">git</h3>
                       <span class="skills__number">60%</span>
                     </div>
+                    <Reveal effect="skill__bar--anmiation">
                     <div class="skills__bar">
                       <span class="skills__percentage skills__git"></span>
                     </div>
+                    </Reveal>
                   </div>
 
                   <div class="skills__data">
@@ -184,9 +191,11 @@ class Skills extends Component {
                       <h3 class="skills__name">Linux</h3>
                       <span class="skills__number">60%</span>
                     </div>
+                    <Reveal effect="skill__bar--anmiation">
                     <div class="skills__bar">
                       <span class="skills__percentage skills__linux"></span>
                     </div>
+                    </Reveal>
                   </div>
                 </div>
               </div>

@@ -7,42 +7,30 @@ class Home extends Component {
     return (
       <>
         <section class="home section" id="home">
-        <Fade cascade>
-        <div className='home__background--animaition' >
-        <svg
-                  class="home__blob"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-              <g mask="url(#mask0)">
-                <path
-                  d="M35.8,-35C44.1,-27.4,47.1,-13.7,46.1,-1C45.1,11.8,40.3,23.6,32,39.4C23.6,55.1,11.8,74.8,-4.4,79.2C-20.7,83.7,-41.4,72.9,-57.3,57.2C-73.1,41.4,-84.1,20.7,-84.4,-0.3C-84.7,-21.3,-74.3,-42.5,-58.4,-50.1C-42.5,-57.7,-21.3,-51.7,-3.8,-47.9C13.7,-44.1,27.4,-42.6,35.8,-35Z"
-                  transform="translate(100 100)"
-                />
-              </g>
-                </svg>
-                <svg
-                  class="home__blob"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-              <g mask="url(#mask0)">
-                <path
-                  d="M35.8,-35C44.1,-27.4,47.1,-13.7,46.1,-1C45.1,11.8,40.3,23.6,32,39.4C23.6,55.1,11.8,74.8,-4.4,79.2C-20.7,83.7,-41.4,72.9,-57.3,57.2C-73.1,41.4,-84.1,20.7,-84.4,-0.3C-84.7,-21.3,-74.3,-42.5,-58.4,-50.1C-42.5,-57.7,-21.3,-51.7,-3.8,-47.9C13.7,-44.1,27.4,-42.6,35.8,-35Z"
-                  transform="translate(100 100)"
-                />
-              </g>
-                </svg>
-        </div>
-        </Fade>
+          <Fade cascade>
+            <div className="home__background--animaition">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
+                <g mask="url(#mask0)">
+                  <path
+                    d="M35.8,-35C44.1,-27.4,47.1,-13.7,46.1,-1C45.1,11.8,40.3,23.6,32,39.4C23.6,55.1,11.8,74.8,-4.4,79.2C-20.7,83.7,-41.4,72.9,-57.3,57.2C-73.1,41.4,-84.1,20.7,-84.4,-0.3C-84.7,-21.3,-74.3,-42.5,-58.4,-50.1C-42.5,-57.7,-21.3,-51.7,-3.8,-47.9C13.7,-44.1,27.4,-42.6,35.8,-35Z"
+                    transform="translate(100 100)"
+                  />
+                </g>
+              </svg>
+              
+            </div>
+          </Fade>
 
           <div class="home__container container grid">
             <div class="home__content grid">
               <div class="home__social">
                 <a
-                  href="https://www.linkedin.com/in/ibrahem-omari-5967a5198/"
+                  href="https://www.linkedin.com/in/ibrahem-al-omari-5967a5198/"
                   target="_blank "
                   class="home__social-icon"
                 >
@@ -89,7 +77,7 @@ class Home extends Component {
 
               <div class="home__data">
                 <h1 class="home__title">Hi,I'am Ibrahem</h1>
-                <span className="home__typed-static">A</span> 
+                <span className="home__typed-static">A</span>
                 <Typed
                   strings={[
                     " FULL-STACK WEB DEVELOPER",

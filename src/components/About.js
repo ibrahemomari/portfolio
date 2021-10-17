@@ -10,10 +10,11 @@ export class About extends Component {
           <h2 class="section_title">About Me</h2>
           <span class="section_subtitle">My introduction</span>
           <div class="about__container container grid">
+            <div className="about-image">
             <Fade left>
               <img src={myPic2} alt="" class="about__img" />
             </Fade>
-
+          </div>
             <Fade right>
               <div class="about__data">
                 <p class="about__description">
